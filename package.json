@@ -1,0 +1,26 @@
+{
+  "name": "udemy",
+  "version": "1.0.0",
+  "description": "Udemy full stack dev course",
+  "homepage": "https://github.com/DanielleLensly/udemy-full-stack-course#readme",
+  "bugs": {
+    "url": "https://github.com/DanielleLensly/udemy-full-stack-course/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielleLensly/udemy-full-stack-course.git"
+  },
+  "license": "ISC",
+  "author": "Danielle Scheurkogel",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server",
+    "dev": "node app.js"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "localhost": "^0.4.1"
+  }
+}
