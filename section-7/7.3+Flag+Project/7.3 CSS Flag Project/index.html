@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>CSS Flag Project</title>
+		<style>
+			/* Write your CSS Code here */
+			.flag {
+				background: #ce1126;
+				width: 900px;
+				height: 600px;
+				position: relative;
+			}
+			.flag > div {
+				position: absolute;
+				background: #002868;
+				height: 300px;
+				width: 100%;
+				z-index: 1;
+				top: 150px;
+			}
+			.flag div div {
+				position: relative;
+				background: white;
+				height: 200px;
+				width: 200px;
+				border-radius: 50%;
+				z-index: 2;
+				top: 50px;
+				left: 350px;
+			}
+			p {
+				text-align: center;
+				margin: 0;
+				font-size: 72px;
+			}
+			.flag p {
+				color: black;
+			}
+			.flag > p {
+				color: white;
+			}
+		</style>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>CSS Flag Project</title>
-  <style>
-    /* Write your CSS Code here */
-    
-  </style>
-</head>
-
-<!-- 
+	<!-- 
   IMPORTANT! Do not change any HTML
 Don't add any classes/ids/elements 
 Use what you know about combining selectors 
@@ -20,15 +53,14 @@ Hint 2: You can use CSS inspection to get the colors from
 https://appbrewery.github.io/flag-of-laos/
 -->
 
-<body>
-  <div class="flag">
-    <p>The Flag</p>
-    <div>
-      <div>
-        <p>of Laos</p>
-      </div>
-    </div>
-  </div>
-</body>
-
+	<body>
+		<div class="flag">
+			<p>The Flag</p>
+			<div>
+				<div>
+					<p>of Laos</p>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
