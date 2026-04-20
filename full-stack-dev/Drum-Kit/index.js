@@ -7,11 +7,15 @@ for (var i = 0; i < numOfDrumButtons; i++) {
 		var buttonInnerHTML = this.innerHTML;
 
 		makeSound(buttonInnerHTML);
+
+		buttonAnimation(buttonInnerHTML);
 	});
 }
 
 document.addEventListener("keydown", function (event) {
 	makeSound(event.key);
+
+	buttonAnimation(event.key);
 });
 
 function makeSound(key) {
@@ -51,12 +55,12 @@ function makeSound(key) {
 	}
 }
 
-// Play function
+function buttonAnimation(currentKey) {
+	var activeButton = document.querySelector("." + currentKey);
 
-// function play() {
-// 	var audio = new Audio("sounds/tom-1.mp3");
-// 	audio.play();
-// }
+	activeButton.classList.add("pressed");
 
-//function takes char checks against switch to play sound
-// and then call inside keypress listener and drum buttons
+	setTimeout(function () {
+		activeButton.classList.remove("pressed");
+	}, 100);
+}
